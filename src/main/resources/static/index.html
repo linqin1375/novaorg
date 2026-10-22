@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NovaOrg · 多 Agent 协作运行时控制台</title>
+<!-- 零构建：无框架、无 npm、无 CDN，全部资源来自 classpath:/static/ -->
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<!-- 顶部：品牌 + 后端连通状态点 -->
+<div class="app-top">
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark">NovaOrg</span>
+      <span class="brand-sub">AI 客诉处理 · 证据检索 · 工具决策 · 人工审批</span>
+    </div>
+    <div class="header-right">
+      <span class="backend-status" id="backend-status" data-state="unknown" title="后端接口连通状态">
+        <i class="dot" aria-hidden="true"></i>
+        <span class="label">检测中…</span>
+      </span>
+    </div>
+  </header>
+
+  <!-- 四个分区：一屏内切换 -->
+  <nav class="tabs" role="tablist" aria-label="控制台分区">
+    <button type="button" class="tab is-active" data-tab="task" role="tab" aria-selected="true">① 发起任务</button>
+    <button type="button" class="tab" data-tab="matrix" role="tab" aria-selected="false">② 权限矩阵</button>
+    <button type="button" class="tab" data-tab="audit" role="tab" aria-selected="false">③ 审计日志</button>
+    <button type="button" class="tab" data-tab="eval" role="tab" aria-selected="false">④ 评测报告</button>
+  </nav>
+</div>
+
+<!-- 全局错误 / 提示区（不使用 alert） -->
+<div class="alert-host" id="global-alert" role="status" aria-live="polite"></div>
+
+<noscript>
+  <div class="noscript-warn">此控制台需要启用 JavaScript 才能调用后端接口。</div>
+</noscript>
+
+<main class="main">
+
+  <!-- ============================ ① 发起任务 ============================ -->
+  <section class="panel is-active" id="panel-task" data-panel="task" role="tabpanel" aria-label="发起任务">
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h2>发起任务</h2>
+          <p class="hint">
+            交付流程：规划 → 派单 → 执行 → 高风险操作审批闸门 → 汇总。
+            每次请求推进一段流程；高风险操作会暂停，等待另一账号核对参数并审批。
+            <code class="endpoint">POST /api/tasks</code>
+          </p>
+        </div>
+      </div>
+
+      <textarea id="goal-input" class="goal-input" rows="3" spellcheck="false"
+                placeholder="用一句中文描述一个需要多部门协作的目标……"></textarea>
+
+      <div class="form-actions">
+        <div class="quick-group">
+          <span class="quick-label">快捷示例</span>
+          <button type="button" class="btn btn-ghost" data-sample="cross">跨部门联合方案</button>
+          <button type="button" class="btn btn-ghost" data-sample="violation">违规越权演示</button>
+          <button type="button" class="btn btn-ghost" data-sample="qa">知识问答</button>
+        </div>
+        <div class="submit-group">
+          <label class="inline-label" for="approval-mode">审批规则</label>
+          <select id="approval-mode"><option value="gate">高风险操作须另一账号审批</option></select>
+          <button type="button" class="btn btn-primary" id="btn-submit">提交任务</button>
+        </div>
+      </div>
+
+      <div class="task-picker">
+        <label for="task-select">最近任务</label>
+        <select id="task-select">
+          <option value="">（加载中…）</option>
+        </select>
+        <button type="button" class="btn btn-ghost btn-sm" id="btn-refresh-tasks">刷新列表</button>
+        <span class="inline-status" id="task-form-status"></span>
+      </div>
+    </div>
+
+    <!-- 任务详情（头部 + 派单流水线） -->
+    <div id="task-detail" class="task-detail"></div>
+  </section>
+
+  <!-- ============================ ② 权限矩阵 ============================ -->
+  <section class="panel" id="panel-matrix" data-panel="matrix" role="tabpanel" aria-label="权限矩阵">
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h2>权限矩阵 · 组织架构与权限治理</h2>
+          <p class="hint">
+            判定规则：角色的 <code class="mono">permissions</code> 包含工具的
+            <code class="mono">requiredPermission</code> 才可调用。这是 RoleGuard 的静态视图。
+            <code class="endpoint">GET /api/org/roles</code>
+            <code class="endpoint">GET /api/org/tools</code>
+          </p>
+        </div>
+        <div class="head-actions">
+          <button type="button" class="btn btn-ghost btn-sm" data-retry="org">刷新</button>
+        </div>
+      </div>
+      <div class="table-scroll matrix-scroll" id="matrix-container"></div>
+      <div class="legend" id="matrix-legend"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h2>工具目录 · 参数与授权契约</h2>
+          <p class="hint">
+            每个工具声明名称、参数、所需权限、风险等级和幂等要求，
+            鉴权与「是否需要人工审批」都由这些声明推导，而不是写死在代码里。
+            <code class="endpoint">GET /api/org/tools</code>
+          </p>
+        </div>
+        <div class="head-actions">
+          <button type="button" class="btn btn-ghost btn-sm" data-retry="org">刷新</button>
+        </div>
+      </div>
+      <div class="table-scroll" id="tool-catalog-container"></div>
+      <div class="legend"><span>参数列中的 <code class="mono">*</code> 表示该参数在 requiredParameters 中，调用时缺省会被 RoleGuard 以 INVALID_ARGUMENTS 拒绝。</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h2>角色维度聚合</h2>
+          <p class="hint">任务数、步骤数、token、成本、平均延迟、工具调用、拒绝次数、重试与 SLA 达标率。
+            <code class="endpoint">GET /api/metrics/roles</code>
+          </p>
+        </div>
+        <div class="head-actions">
+          <button type="button" class="btn btn-ghost btn-sm" data-retry="roleMetrics">刷新</button>
+        </div>
+      </div>
+      <div class="table-scroll" id="role-metrics-container"></div>
+    </div>
+  </section>
+
+  <!-- ============================ ③ 审计日志 ============================ -->
+  <section class="panel" id="panel-audit" data-panel="audit" role="tabpanel" aria-label="审计日志">
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h2>审计日志</h2>
+          <p class="hint">谁在什么授权下做了什么。时间倒序，点击条目展开 attributes。
+            <code class="endpoint">GET /api/tasks/{taskId}/audit</code>
+          </p>
+        </div>
+        <div class="head-actions">
+          <label class="inline-label" for="audit-task-select">任务</label>
+          <select id="audit-task-select">
+            <option value="">（加载中…）</option>
+          </select>
+          <button type="button" class="btn btn-ghost btn-sm" data-retry="audit">刷新</button>
+        </div>
+      </div>
+      <div class="meta-row" id="audit-meta"></div>
+      <div class="audit-list" id="audit-list"></div>
+    </div>
+  </section>
+
+  <!-- ============================ ④ 评测报告 ============================ -->
+  <section class="panel" id="panel-eval" data-panel="eval" role="tabpanel" aria-label="评测报告">
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h2>评测报告</h2>
+          <p class="hint">路由准确率、工具合规、引用命中、权限越权与成本口径的离线评测快照。
+            <code class="endpoint">GET /api/eval/latest</code>
+          </p>
+        </div>
+        <div class="head-actions">
+          <button type="button" class="btn btn-ghost btn-sm" data-retry="eval">刷新</button>
+        </div>
+      </div>
+      <div id="eval-body"></div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>

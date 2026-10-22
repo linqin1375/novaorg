@@ -1,0 +1,1042 @@
+{
+  "[LEXICAL]" : {
+    "embeddingId" : "local-hashing-512d",
+    "total" : 20,
+    "recallAt1" : 0.65,
+    "recallAt3" : 0.9,
+    "recallAt5" : 0.9,
+    "mrr" : 0.7667,
+    "hardTotal" : 9,
+    "hardRecallAt3" : 0.7778,
+    "easyTotal" : 0,
+    "easyRecallAt3" : 0.0,
+    "results" : [ {
+      "caseId" : "holdout-001",
+      "query" : "客户确认已经解决后，支持人员现在能关单吗，若没回复要等多久",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "return-policy.md", "product-guide.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "工单",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-002",
+      "query" : "一张工单来回转了两次还没解决，下次该找谁",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "service-sla.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "工单",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-003",
+      "query" : "赔偿是在算销售费用还是售后成本，记账别混了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "return-policy.md", "product-guide.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-004",
+      "query" : "活动结束还剩一笔没花的钱，什么时候重新变成可用预算",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "compensation-standard.md", "return-policy.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-005",
+      "query" : "钱已经同意退了，银行卡和支付钱包到账日子一样吗",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "compensation-standard.md", "ops-metrics.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-006",
+      "query" : "偏远县城配送承诺几天，碰上道路封闭如何算",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "customer-tier.md", "return-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-007",
+      "query" : "同一个顾客这个月第三次来要赔偿，可以自动发钱吗",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "product-guide.md", "return-policy.md", "customer-tier.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-008",
+      "query" : "这单履约已经迟了三天，赔付是按实付多少比例，上限多少",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "customer-tier.md", "finance-policy.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-009",
+      "query" : "短信名单都是订阅用户，仍然需要限制每周发几次吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "ops-metrics.md", "compensation-standard.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-010",
+      "query" : "客户说不再接收推广，要等下个月才能停掉吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "product-guide.md", "campaign-rule.md", "compensation-standard.md", "customer-tier.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "营销",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-011",
+      "query" : "处理人和批准打款的人能用同一个账号吗",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "service-sla.md", "compensation-standard.md", "ticket-sop.md", "product-guide.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "权限",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-012",
+      "query" : "查三年前一笔操作，需要保留哪些审核证据字段",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "compensation-standard.md", "return-policy.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "权限",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-013",
+      "query" : "赠品坏了是不是也按商品售后处理，拆了套装怎么办",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-014",
+      "query" : "鲜果送到已经坏了需要什么凭证，电子兑换码能无理由退吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "return-policy.md", "customer-tier.md", "product-guide.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-015",
+      "query" : "衣服卖出去一千件退回来两百件，放在哪个指标里看是否正常",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "product-guide.md", "ticket-sop.md", "customer-tier.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-016",
+      "query" : "样本还不到五百笔，能据此决定改变营销策略吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "finance-policy.md", "audit-policy.md", "customer-tier.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-017",
+      "query" : "好几种补偿我都符合，是否能每一种都领一次",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "return-policy.md", "campaign-rule.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "客户",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-018",
+      "query" : "市场部想拿完整手机号和地址做分析，是允许的吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "campaign-rule.md", "ticket-sop.md", "product-guide.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "客户",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-019",
+      "query" : "下单后降价了，参加过活动价还能再要求价保吗",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "finance-policy.md", "ops-metrics.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-020",
+      "query" : "签收后发现质量问题，十五天之内是修还是换",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "ticket-sop.md", "compensation-standard.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退货",
+      "difficulty" : "medium"
+    } ]
+  },
+  "[DENSE]" : {
+    "embeddingId" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "total" : 20,
+    "recallAt1" : 0.9,
+    "recallAt3" : 1.0,
+    "recallAt5" : 1.0,
+    "mrr" : 0.95,
+    "hardTotal" : 9,
+    "hardRecallAt3" : 1.0,
+    "easyTotal" : 0,
+    "easyRecallAt3" : 0.0,
+    "results" : [ {
+      "caseId" : "holdout-001",
+      "query" : "客户确认已经解决后，支持人员现在能关单吗，若没回复要等多久",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "service-sla.md", "ops-metrics.md", "campaign-rule.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "工单",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-002",
+      "query" : "一张工单来回转了两次还没解决，下次该找谁",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "service-sla.md", "customer-tier.md", "return-policy.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "工单",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-003",
+      "query" : "赔偿是在算销售费用还是售后成本，记账别混了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "product-guide.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-004",
+      "query" : "活动结束还剩一笔没花的钱，什么时候重新变成可用预算",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "product-guide.md", "service-sla.md", "audit-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-005",
+      "query" : "钱已经同意退了，银行卡和支付钱包到账日子一样吗",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "finance-policy.md", "return-policy.md", "product-guide.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-006",
+      "query" : "偏远县城配送承诺几天，碰上道路封闭如何算",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "product-guide.md", "ticket-sop.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-007",
+      "query" : "同一个顾客这个月第三次来要赔偿，可以自动发钱吗",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "ticket-sop.md", "return-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-008",
+      "query" : "这单履约已经迟了三天，赔付是按实付多少比例，上限多少",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "finance-policy.md", "customer-tier.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-009",
+      "query" : "短信名单都是订阅用户，仍然需要限制每周发几次吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "customer-tier.md", "ticket-sop.md", "audit-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-010",
+      "query" : "客户说不再接收推广，要等下个月才能停掉吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "campaign-rule.md", "finance-policy.md", "customer-tier.md", "product-guide.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "营销",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-011",
+      "query" : "处理人和批准打款的人能用同一个账号吗",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ticket-sop.md", "customer-tier.md", "service-sla.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "权限",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-012",
+      "query" : "查三年前一笔操作，需要保留哪些审核证据字段",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "campaign-rule.md", "ticket-sop.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "权限",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-013",
+      "query" : "赠品坏了是不是也按商品售后处理，拆了套装怎么办",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "compensation-standard.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-014",
+      "query" : "鲜果送到已经坏了需要什么凭证，电子兑换码能无理由退吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "compensation-standard.md", "customer-tier.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-015",
+      "query" : "衣服卖出去一千件退回来两百件，放在哪个指标里看是否正常",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "campaign-rule.md", "product-guide.md", "ticket-sop.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-016",
+      "query" : "样本还不到五百笔，能据此决定改变营销策略吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "campaign-rule.md", "customer-tier.md", "ticket-sop.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-017",
+      "query" : "好几种补偿我都符合，是否能每一种都领一次",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "return-policy.md", "product-guide.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "客户",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-018",
+      "query" : "市场部想拿完整手机号和地址做分析，是允许的吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "campaign-rule.md", "audit-policy.md", "ticket-sop.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "客户",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-019",
+      "query" : "下单后降价了，参加过活动价还能再要求价保吗",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "campaign-rule.md", "product-guide.md", "compensation-standard.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-020",
+      "query" : "签收后发现质量问题，十五天之内是修还是换",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退货",
+      "difficulty" : "medium"
+    } ]
+  },
+  "[LEXICAL, CONCEPT]" : {
+    "embeddingId" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "total" : 20,
+    "recallAt1" : 0.5,
+    "recallAt3" : 0.9,
+    "recallAt5" : 0.95,
+    "mrr" : 0.7042,
+    "hardTotal" : 9,
+    "hardRecallAt3" : 0.7778,
+    "easyTotal" : 0,
+    "easyRecallAt3" : 0.0,
+    "results" : [ {
+      "caseId" : "holdout-001",
+      "query" : "客户确认已经解决后，支持人员现在能关单吗，若没回复要等多久",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "return-policy.md", "ticket-sop.md", "customer-tier.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "工单",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-002",
+      "query" : "一张工单来回转了两次还没解决，下次该找谁",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "service-sla.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "工单",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-003",
+      "query" : "赔偿是在算销售费用还是售后成本，记账别混了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "compensation-standard.md", "return-policy.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-004",
+      "query" : "活动结束还剩一笔没花的钱，什么时候重新变成可用预算",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "return-policy.md", "audit-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "财务",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-005",
+      "query" : "钱已经同意退了，银行卡和支付钱包到账日子一样吗",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "compensation-standard.md", "ops-metrics.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-006",
+      "query" : "偏远县城配送承诺几天，碰上道路封闭如何算",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "return-policy.md", "finance-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-007",
+      "query" : "同一个顾客这个月第三次来要赔偿，可以自动发钱吗",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "customer-tier.md", "return-policy.md", "ops-metrics.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-008",
+      "query" : "这单履约已经迟了三天，赔付是按实付多少比例，上限多少",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "finance-policy.md", "customer-tier.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-009",
+      "query" : "短信名单都是订阅用户，仍然需要限制每周发几次吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "ops-metrics.md", "compensation-standard.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-010",
+      "query" : "客户说不再接收推广，要等下个月才能停掉吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "product-guide.md", "campaign-rule.md", "compensation-standard.md", "customer-tier.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "营销",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-011",
+      "query" : "处理人和批准打款的人能用同一个账号吗",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "service-sla.md", "audit-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 4,
+      "category" : "权限",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-012",
+      "query" : "查三年前一笔操作，需要保留哪些审核证据字段",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "campaign-rule.md", "return-policy.md", "compensation-standard.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "权限",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-013",
+      "query" : "赠品坏了是不是也按商品售后处理，拆了套装怎么办",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-014",
+      "query" : "鲜果送到已经坏了需要什么凭证，电子兑换码能无理由退吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "customer-tier.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-015",
+      "query" : "衣服卖出去一千件退回来两百件，放在哪个指标里看是否正常",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "ops-metrics.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-016",
+      "query" : "样本还不到五百笔，能据此决定改变营销策略吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "customer-tier.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-017",
+      "query" : "好几种补偿我都符合，是否能每一种都领一次",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "customer-tier.md", "return-policy.md", "ops-metrics.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "客户",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-018",
+      "query" : "市场部想拿完整手机号和地址做分析，是允许的吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "campaign-rule.md", "ticket-sop.md", "product-guide.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "客户",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-019",
+      "query" : "下单后降价了，参加过活动价还能再要求价保吗",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "finance-policy.md", "customer-tier.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-020",
+      "query" : "签收后发现质量问题，十五天之内是修还是换",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "finance-policy.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退货",
+      "difficulty" : "medium"
+    } ]
+  },
+  "[LEXICAL, DENSE]" : {
+    "embeddingId" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "total" : 20,
+    "recallAt1" : 0.75,
+    "recallAt3" : 0.9,
+    "recallAt5" : 0.95,
+    "mrr" : 0.8375,
+    "hardTotal" : 9,
+    "hardRecallAt3" : 0.7778,
+    "easyTotal" : 0,
+    "easyRecallAt3" : 0.0,
+    "results" : [ {
+      "caseId" : "holdout-001",
+      "query" : "客户确认已经解决后，支持人员现在能关单吗，若没回复要等多久",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "service-sla.md", "ops-metrics.md", "return-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "工单",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-002",
+      "query" : "一张工单来回转了两次还没解决，下次该找谁",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "service-sla.md", "ops-metrics.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "工单",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-003",
+      "query" : "赔偿是在算销售费用还是售后成本，记账别混了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "return-policy.md", "compensation-standard.md", "campaign-rule.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-004",
+      "query" : "活动结束还剩一笔没花的钱，什么时候重新变成可用预算",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "return-policy.md", "product-guide.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-005",
+      "query" : "钱已经同意退了，银行卡和支付钱包到账日子一样吗",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "finance-policy.md", "product-guide.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-006",
+      "query" : "偏远县城配送承诺几天，碰上道路封闭如何算",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-007",
+      "query" : "同一个顾客这个月第三次来要赔偿，可以自动发钱吗",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "customer-tier.md", "return-policy.md", "ticket-sop.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-008",
+      "query" : "这单履约已经迟了三天，赔付是按实付多少比例，上限多少",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "customer-tier.md", "finance-policy.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-009",
+      "query" : "短信名单都是订阅用户，仍然需要限制每周发几次吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "customer-tier.md", "ticket-sop.md", "audit-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-010",
+      "query" : "客户说不再接收推广，要等下个月才能停掉吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "customer-tier.md", "ticket-sop.md", "finance-policy.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-011",
+      "query" : "处理人和批准打款的人能用同一个账号吗",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "compensation-standard.md", "return-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "权限",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-012",
+      "query" : "查三年前一笔操作，需要保留哪些审核证据字段",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "compensation-standard.md", "campaign-rule.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "权限",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-013",
+      "query" : "赠品坏了是不是也按商品售后处理，拆了套装怎么办",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "compensation-standard.md", "finance-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-014",
+      "query" : "鲜果送到已经坏了需要什么凭证，电子兑换码能无理由退吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "customer-tier.md", "service-sla.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-015",
+      "query" : "衣服卖出去一千件退回来两百件，放在哪个指标里看是否正常",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "product-guide.md", "ticket-sop.md", "ops-metrics.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 4,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-016",
+      "query" : "样本还不到五百笔，能据此决定改变营销策略吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "campaign-rule.md", "customer-tier.md", "audit-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-017",
+      "query" : "好几种补偿我都符合，是否能每一种都领一次",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "客户",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-018",
+      "query" : "市场部想拿完整手机号和地址做分析，是允许的吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "ticket-sop.md", "campaign-rule.md", "product-guide.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "客户",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-019",
+      "query" : "下单后降价了，参加过活动价还能再要求价保吗",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "product-guide.md", "ticket-sop.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-020",
+      "query" : "签收后发现质量问题，十五天之内是修还是换",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "ticket-sop.md", "compensation-standard.md", "service-sla.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退货",
+      "difficulty" : "medium"
+    } ]
+  },
+  "[LEXICAL, DENSE, CONCEPT]" : {
+    "embeddingId" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "total" : 20,
+    "recallAt1" : 0.75,
+    "recallAt3" : 0.9,
+    "recallAt5" : 0.95,
+    "mrr" : 0.8375,
+    "hardTotal" : 9,
+    "hardRecallAt3" : 0.7778,
+    "easyTotal" : 0,
+    "easyRecallAt3" : 0.0,
+    "results" : [ {
+      "caseId" : "holdout-001",
+      "query" : "客户确认已经解决后，支持人员现在能关单吗，若没回复要等多久",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "return-policy.md", "customer-tier.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "工单",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-002",
+      "query" : "一张工单来回转了两次还没解决，下次该找谁",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "service-sla.md", "ops-metrics.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "工单",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-003",
+      "query" : "赔偿是在算销售费用还是售后成本，记账别混了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "return-policy.md", "campaign-rule.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-004",
+      "query" : "活动结束还剩一笔没花的钱，什么时候重新变成可用预算",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "audit-policy.md", "return-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-005",
+      "query" : "钱已经同意退了，银行卡和支付钱包到账日子一样吗",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "finance-policy.md", "product-guide.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-006",
+      "query" : "偏远县城配送承诺几天，碰上道路封闭如何算",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-007",
+      "query" : "同一个顾客这个月第三次来要赔偿，可以自动发钱吗",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "customer-tier.md", "return-policy.md", "ops-metrics.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-008",
+      "query" : "这单履约已经迟了三天，赔付是按实付多少比例，上限多少",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "finance-policy.md", "return-policy.md", "customer-tier.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-009",
+      "query" : "短信名单都是订阅用户，仍然需要限制每周发几次吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "customer-tier.md", "ticket-sop.md", "audit-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-010",
+      "query" : "客户说不再接收推广，要等下个月才能停掉吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "customer-tier.md", "ticket-sop.md", "finance-policy.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-011",
+      "query" : "处理人和批准打款的人能用同一个账号吗",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "return-policy.md", "audit-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 4,
+      "category" : "权限",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-012",
+      "query" : "查三年前一笔操作，需要保留哪些审核证据字段",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "compensation-standard.md", "return-policy.md", "campaign-rule.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "权限",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-013",
+      "query" : "赠品坏了是不是也按商品售后处理，拆了套装怎么办",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "compensation-standard.md", "finance-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-014",
+      "query" : "鲜果送到已经坏了需要什么凭证，电子兑换码能无理由退吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "customer-tier.md", "service-sla.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-015",
+      "query" : "衣服卖出去一千件退回来两百件，放在哪个指标里看是否正常",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "product-guide.md", "ticket-sop.md", "return-policy.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-016",
+      "query" : "样本还不到五百笔，能据此决定改变营销策略吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "customer-tier.md", "finance-policy.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-017",
+      "query" : "好几种补偿我都符合，是否能每一种都领一次",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "customer-tier.md", "return-policy.md", "ticket-sop.md", "product-guide.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "客户",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-018",
+      "query" : "市场部想拿完整手机号和地址做分析，是允许的吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "ticket-sop.md", "campaign-rule.md", "product-guide.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "客户",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-019",
+      "query" : "下单后降价了，参加过活动价还能再要求价保吗",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "customer-tier.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-020",
+      "query" : "签收后发现质量问题，十五天之内是修还是换",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "finance-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退货",
+      "difficulty" : "medium"
+    } ]
+  },
+  "all+rerank-weight-0.6" : {
+    "embeddingId" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "total" : 20,
+    "recallAt1" : 0.8,
+    "recallAt3" : 0.9,
+    "recallAt5" : 0.95,
+    "mrr" : 0.8625,
+    "hardTotal" : 9,
+    "hardRecallAt3" : 0.7778,
+    "easyTotal" : 0,
+    "easyRecallAt3" : 0.0,
+    "results" : [ {
+      "caseId" : "holdout-001",
+      "query" : "客户确认已经解决后，支持人员现在能关单吗，若没回复要等多久",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "return-policy.md", "customer-tier.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "工单",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-002",
+      "query" : "一张工单来回转了两次还没解决，下次该找谁",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "ops-metrics.md", "service-sla.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "工单",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-003",
+      "query" : "赔偿是在算销售费用还是售后成本，记账别混了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "return-policy.md", "campaign-rule.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-004",
+      "query" : "活动结束还剩一笔没花的钱，什么时候重新变成可用预算",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "return-policy.md", "audit-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-005",
+      "query" : "钱已经同意退了，银行卡和支付钱包到账日子一样吗",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "product-guide.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-006",
+      "query" : "偏远县城配送承诺几天，碰上道路封闭如何算",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "finance-policy.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-007",
+      "query" : "同一个顾客这个月第三次来要赔偿，可以自动发钱吗",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "customer-tier.md", "return-policy.md", "finance-policy.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-008",
+      "query" : "这单履约已经迟了三天，赔付是按实付多少比例，上限多少",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "finance-policy.md", "return-policy.md", "customer-tier.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-009",
+      "query" : "短信名单都是订阅用户，仍然需要限制每周发几次吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "customer-tier.md", "ticket-sop.md", "audit-policy.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-010",
+      "query" : "客户说不再接收推广，要等下个月才能停掉吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "customer-tier.md", "ticket-sop.md", "compensation-standard.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-011",
+      "query" : "处理人和批准打款的人能用同一个账号吗",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "return-policy.md", "audit-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 4,
+      "category" : "权限",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-012",
+      "query" : "查三年前一笔操作，需要保留哪些审核证据字段",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "compensation-standard.md", "campaign-rule.md", "finance-policy.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "权限",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-013",
+      "query" : "赠品坏了是不是也按商品售后处理，拆了套装怎么办",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "finance-policy.md", "compensation-standard.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-014",
+      "query" : "鲜果送到已经坏了需要什么凭证，电子兑换码能无理由退吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "customer-tier.md", "service-sla.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "商品",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-015",
+      "query" : "衣服卖出去一千件退回来两百件，放在哪个指标里看是否正常",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "product-guide.md", "return-policy.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-016",
+      "query" : "样本还不到五百笔，能据此决定改变营销策略吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "customer-tier.md", "finance-policy.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "运营",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-017",
+      "query" : "好几种补偿我都符合，是否能每一种都领一次",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "return-policy.md", "ops-metrics.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "客户",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "holdout-018",
+      "query" : "市场部想拿完整手机号和地址做分析，是允许的吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "ticket-sop.md", "campaign-rule.md", "product-guide.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "客户",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-019",
+      "query" : "下单后降价了，参加过活动价还能再要求价保吗",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "finance-policy.md", "customer-tier.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "holdout-020",
+      "query" : "签收后发现质量问题，十五天之内是修还是换",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "finance-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退货",
+      "difficulty" : "medium"
+    } ]
+  },
+  "metricDefinition" : "Hit@k: any expected document appears in first k distinct documents; legacy field names recallAtK",
+  "split" : "held out from tuning; AI-authored; human review pending"
+}

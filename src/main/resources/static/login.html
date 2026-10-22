@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NovaOrg · 登录</title><link rel="stylesheet" href="/style.css"></head>
+<body style="display:grid;place-items:center;min-height:100vh;background:#edf3f2">
+<main style="width:min(460px,90vw);padding:32px;border-radius:18px;background:white;box-shadow:0 12px 40px #163c3715">
+<p style="color:#187569;font-weight:700">NovaOrg · 企业协作演示</p><h1 id="title">登录工作台</h1>
+<p id="hint">operator 提交任务；reviewer 核对并审批；admin 管理演示。密码由部署者设置。</p>
+<form id="form" style="display:grid;gap:14px">
+<label id="username-label">账号<input id="username" name="username" autocomplete="username" required style="display:block;width:100%;padding:10px" value="operator"></label>
+<label>密码<input id="password" name="password" type="password" autocomplete="current-password" required style="display:block;width:100%;padding:10px"></label>
+<label id="new-label" hidden>新密码（12–72 位）<input id="new-password" type="password" autocomplete="new-password" minlength="12" maxlength="72" style="display:block;width:100%;padding:10px"></label>
+<button type="submit" class="btn btn-primary" id="submit">登录</button><p id="error" role="alert" style="color:#a42c2c"></p>
+</form><p><a href="/">返回工作台</a></p><small>离线模型和模拟订单可完整体验流程，不会发生真实退款。</small>
+</main><script src="/login.js" defer></script></body></html>

@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-21T11:03:56.2984870+08:00",
+  "url": "http://127.0.0.1:8093",
+  "health": "UP",
+  "system": {
+    "llmBackend": "openai-compatible:deepseek-flash@api.deepseek.com",
+    "liveModel": true,
+    "embedding": "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "knowledgeChunks": 40,
+    "roles": 7,
+    "tools": 12
+  },
+  "artifactSha256": "754E12D3B71E29C88C6511B0D3EF7EDE62A6DE5133E6AC9590A73266CA43E5A3",
+  "runtimeMatchesBuild": true,
+  "database": "persistent H2, Flyway schema V3",
+  "tests": {
+    "log": "glm-verify.log",
+    "total": 114,
+    "errors": 0,
+    "failures": 0
+  },
+  "httpAcceptance": "reports/local-http-acceptance.json",
+  "liveRefundValidation": "reports/live-20261021-105451",
+  "semanticRetrievalValidation": "reports/retrieval-20261021-110202",
+  "chatApiRequestsThisTurn": 34,
+  "chatInputOutputTokensThisTurn": 55222,
+  "embeddingEvalInputTokens": 3647,
+  "paidChatCallDuringDeploymentCheck": false,
+  "knownLimits": [
+    "Latest refund chat validation used local retrieval before GLM was configured.",
+    "Full live suite has not been rerun on the final combined configuration.",
+    "Retrieval labels are synthetic; human semantic review is pending."
+  ]
+}

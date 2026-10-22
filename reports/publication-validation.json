@@ -1,0 +1,155 @@
+{
+  "checkedAt": "2026-10-22T03:27:16.407133+00:00",
+  "project": "novaorg",
+  "tests": {
+    "tests": 114,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "modelApiCalls": 0,
+  "conditions": "JDK 17; deterministic/stub models; local feature retrieval; H2; Windows",
+  "mavenGoal": "verify",
+  "suites": [
+    {
+      "name": "io.github.tangbailin.novaorg.api.ApiContractTest",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.api.DurableSecurityIntegrationTest",
+      "tests": 17,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.eval.AgentEvalTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.eval.EvaluationMeaningTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.eval.RetrievalDiagnosticTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.eval.RetrievalEvalTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.knowledge.EmbeddingProviderTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.knowledge.EvidenceReferencesTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.knowledge.HashingEmbeddingModelTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.knowledge.TokenizerTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.llm.DemoLlmPortTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.llm.NativeConversationTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.llm.SpringAiAbsentWiringTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.llm.StructuredOutputParserTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.llm.ToolCallingTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.plan.PlannerCapabilityTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.policy.PromptGuardTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.policy.RoleGuardTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.runtime.AgentLoopTest",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "io.github.tangbailin.novaorg.runtime.WorkflowEngineTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ]
+}

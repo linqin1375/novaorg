@@ -1,0 +1,11 @@
+﻿{
+    "mode":  "offline-synthetic",
+    "checkedAt":  "2026-10-21T10:54:53.0397946+08:00",
+    "database":  "isolated acceptance database",
+    "approval":  "DONE",
+    "duplicateApprovalHttp":  409,
+    "stateAndTraceSurviveRestart":  true,
+    "clarifiedOrder":  "A101",
+    "missingOrder":  "NEEDS_INPUT",
+    "secondFullRefund":  "FAILED"
+}

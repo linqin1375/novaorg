@@ -1,0 +1,82 @@
+server:
+  port: ${PORT:8080}
+  address: ${BIND_ADDRESS:127.0.0.1}
+  servlet:
+    session:
+      timeout: 30m
+      cookie:
+        http-only: true
+        same-site: strict
+        secure: ${COOKIE_SECURE:false}
+
+spring:
+  ai:
+    # Adding the optional SDK must not silently activate unrelated provider clients.
+    model:
+      chat: none
+      embedding: none
+      image: none
+      moderation: none
+      audio:
+        speech: none
+        transcription: none
+  application:
+    name: novaorg
+  datasource:
+    url: ${NOVAORG_DB_URL:jdbc:h2:file:./data/novaorg;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000;WRITE_DELAY=0}
+    username: ${NOVAORG_DB_USER:sa}
+    password: ${NOVAORG_DB_PASSWORD:}
+  sql:
+    init:
+      mode: never
+  jackson:
+    default-property-inclusion: non_null
+
+novaorg:
+  llm:
+    # demo = offline deterministic backend (no key, reproducible evals)
+    # live = any OpenAI-compatible endpoint (DeepSeek / Qwen / Ollama / vLLM)
+    mode: ${NOVAORG_LLM_MODE:demo}
+    base-url: ${NOVAORG_LLM_BASE_URL:https://api.deepseek.com/v1}
+    api-key: ${NOVAORG_LLM_API_KEY:}
+    model: ${NOVAORG_LLM_MODEL:deepseek-flash}
+    strict-tools: ${NOVAORG_LLM_STRICT_TOOLS:false}
+    thinking: ${NOVAORG_LLM_THINKING:false}
+    timeout-ms: 45000
+    max-attempts: 2
+  planner:
+    max-steps: 4
+    step-budget-tokens: ${NOVAORG_STEP_BUDGET_TOKENS:8000}
+  # 向量后端：local = 离线概念增强模型（零配置、评测可复现）
+  #           api   = 任意 OpenAI 兼容 /embeddings 端点（OpenAI / 通义 / 硅基流动 bge-m3 / Ollama）
+  embedding:
+    mode: ${NOVAORG_EMBEDDING_MODE:local}
+    base-url: ${NOVAORG_EMBEDDING_BASE_URL:https://api.siliconflow.cn/v1}
+    api-key: ${NOVAORG_EMBEDDING_API_KEY:}
+    model: ${NOVAORG_EMBEDDING_MODEL:BAAI/bge-m3}
+    timeout-ms: 30000
+    dimensions: ${NOVAORG_EMBEDDING_DIMENSIONS:1024}
+    # 两阶段检索参数：先按 RRF 召回 rerank-depth 条，再精排取 topK
+    rrf-k: 60
+    rerank-depth: 20
+    # 精排默认关闭：消融实验显示它会把 recall@3 从 95.0% 压到 93.3%
+    # （精排特征是 RRF 已用信号的弱化重述），保留开关供语料扩大后重新评估。
+    rerank-weight: 0.0
+  cost:
+    input-per-million-usd: 0.30
+    output-per-million-usd: 1.20
+  # 启动时播种两条演示任务，避免控制台与 /api/metrics/roles 首屏为空。
+  # 任何"像生产"的环境都应设为 false。
+  demo:
+    seed-on-startup: false
+    seed-gate-task: true
+    seed-escalation-task: true
+  # 审批的四眼原则：放行高风险操作的人不能是提出申请的人。
+  approval:
+    require-separate-approver: true
+    default-approver: approver
+
+logging:
+  level:
+    root: INFO
+    io.github.tangbailin.novaorg: INFO

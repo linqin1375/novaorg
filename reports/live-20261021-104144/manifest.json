@@ -1,0 +1,28 @@
+{
+  "startedAt" : "2026-10-21T02:41:44.878240700Z",
+  "finishedAt" : "2026-10-21T02:41:56.749229600Z",
+  "llm" : "openai-compatible:deepseek-flash@api.deepseek.com",
+  "embedding" : "local-feature-hashing-concepts-1024d",
+  "learnedEmbedding" : false,
+  "dataset" : "eval/agent-live-cases.json",
+  "casesHash" : "c6fc3ecb9d8f6d8b93f8852897618323afc4624c4832215feb9cf78e3bd384a3",
+  "knowledgeHash" : "4eed7c30dc336769e7d8da1c84e2ccb7c6ab7892ceffeaef0aad813329daf45c",
+  "promptHash" : "737cc3b496a8afe7749a67b5ddab5255e79fa0f983393d708f57817ec58723ec",
+  "trials" : 1,
+  "casesPerTrial" : 3,
+  "modelRequests" : 10,
+  "caseIds" : [ "live-order-and-calculation", "live-refund-needs-human", "live-refund-arrival" ],
+  "inputTokens" : 14335,
+  "outputTokens" : 1325,
+  "usageEstimated" : false,
+  "requestLimit" : 10,
+  "tokenLimit" : 17863,
+  "strictTools" : "false",
+  "retrievalConfig" : {
+    "rrfK" : 60,
+    "rerankWeight" : 0,
+    "candidateDepth" : 20
+  },
+  "semanticAnswerSupport" : "NOT_EVALUATED: inspect references and business outcome; human review required",
+  "billing" : "Provider usage is recorded when available; configured cost estimates are not invoices"
+}

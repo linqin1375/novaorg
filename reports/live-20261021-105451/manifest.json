@@ -1,0 +1,28 @@
+{
+  "startedAt" : "2026-10-21T02:54:51.643347700Z",
+  "finishedAt" : "2026-10-21T02:54:56.963258Z",
+  "llm" : "openai-compatible:deepseek-flash@api.deepseek.com",
+  "embedding" : "local-feature-hashing-concepts-1024d",
+  "learnedEmbedding" : false,
+  "dataset" : "eval/agent-live-cases.json",
+  "casesHash" : "9c2ccae879ba81c605642ca3a1c6f3ca066cbff7381e1485653ecc1a62ad348d",
+  "knowledgeHash" : "e1f1ac341cd5ce01e95bd2fa596c0dfc2000d42a80281822de7acd87cc1d0292",
+  "promptHash" : "737cc3b496a8afe7749a67b5ddab5255e79fa0f983393d708f57817ec58723ec",
+  "trials" : 1,
+  "casesPerTrial" : 1,
+  "modelRequests" : 4,
+  "caseIds" : [ "live-refund-needs-human" ],
+  "inputTokens" : 6784,
+  "outputTokens" : 641,
+  "usageEstimated" : false,
+  "requestLimit" : 6,
+  "tokenLimit" : 12000,
+  "strictTools" : "false",
+  "retrievalConfig" : {
+    "rrfK" : 60,
+    "rerankWeight" : 0,
+    "candidateDepth" : 20
+  },
+  "semanticAnswerSupport" : "NOT_EVALUATED: inspect references and business outcome; human review required",
+  "billing" : "Provider usage is recorded when available; configured cost estimates are not invoices"
+}

@@ -1,0 +1,2962 @@
+{
+  "[LEXICAL]" : {
+    "embeddingId" : "local-hashing-512d",
+    "total" : 60,
+    "recallAt1" : 0.7833,
+    "recallAt3" : 0.95,
+    "recallAt5" : 0.9667,
+    "mrr" : 0.8617,
+    "hardTotal" : 22,
+    "hardRecallAt3" : 0.8636,
+    "easyTotal" : 12,
+    "easyRecallAt3" : 1.0,
+    "results" : [ {
+      "caseId" : "r001",
+      "query" : "收到货了 打开看了一眼不喜欢 能退吗 包装都还在",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "compensation-standard.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r002",
+      "query" : "我上周刚买的 今天就降了三百 这个差价还能要回来么",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "finance-policy.md", "product-guide.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r003",
+      "query" : "包装我拆了 但是东西真的一次没用过 商家说拆封就不给退 这合理吗？？",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "ticket-sop.md", "product-guide.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r004",
+      "query" : "买的车厘子 打开一半都软了流水了 这个咋弄啊",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "customer-tier.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r005",
+      "query" : "充的会员卡 一次都没用过 现在不想用了 钱能退回来吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "service-sla.md", "return-policy.md", "campaign-rule.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r006",
+      "query" : "买的时候送了个蓝牙耳机 现在耳机找不着了 主商品退回去要扣我钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "service-sla.md", "return-policy.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r007",
+      "query" : "用了十来天 屏幕自己黑了 开不了机 能直接换台新的不",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "campaign-rule.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r008",
+      "query" : "钱退回我银行卡 到底几天能到 你们别老说1到7天 给个准话",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "product-guide.md", "finance-policy.md", "return-policy.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r009",
+      "query" : "页面写着特价清仓不退不换 我当时点了确认 现在还能反悔吗 定单号我发你",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "service-sla.md", "finance-policy.md", "ticket-sop.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r010",
+      "query" : "手机掉水里了 泡了半小时 拿去修还要钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "customer-tier.md", "ticket-sop.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r011",
+      "query" : "我是你们三年老客户了 一年消费小十万 退货能不能比七天宽一点",
+      "expectDocs" : [ "customer-tier.md", "return-policy.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "return-policy.md", "compensation-standard.md", "campaign-rule.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r012",
+      "query" : "买了一整套锅 只想要里面那个炒锅 剩下的退回去行不行",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "compensation-standard.md", "service-sla.md", "return-policy.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r013",
+      "query" : "说好48小时发货 现在都五天了 这种能赔多少",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "service-sla.md", "compensation-standard.md", "audit-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r014",
+      "query" : "我10月3号下的单 订单号69301******56631 说好48小时发货 现在都13号了 到底发不发？？该拿多少补偿",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "compensation-standard.md", "customer-tier.md", "service-sla.md", "return-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r015",
+      "query" : "赔钱的话 是不是随便哪个客服都能直接给我",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "finance-policy.md", "service-sla.md", "customer-tier.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r016",
+      "query" : "这个月光找你们要说法就第三回了 上回那单赔了80 会不会被系统拉黑不给赔了",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "product-guide.md", "ticket-sop.md", "finance-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r017",
+      "query" : "买的三文鱼 到的时候都臭了 冰袋全化成水 这个是不是得全赔",
+      "expectDocs" : [ "compensation-standard.md", "product-guide.md" ],
+      "retrievedDocs" : [ "return-policy.md", "compensation-standard.md", "service-sla.md", "campaign-rule.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r018",
+      "query" : "赔了钱连个依据条款都不写 事后被查出来算什么",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "ops-metrics.md", "audit-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r019",
+      "query" : "该补我多少钱 你们说了算还是有标准",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "ticket-sop.md", "finance-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r020",
+      "query" : "这笔赔了500 除了找经理签字 还要不要通知别的部门",
+      "expectDocs" : [ "compensation-standard.md", "ticket-sop.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "product-guide.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r021",
+      "query" : "一级客服手里最多能直接给出多少钱的东西",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "service-sla.md", "ops-metrics.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r022",
+      "query" : "同一个收货地址 三个月里第五次说质量有问题 系统会怎么处理",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ticket-sop.md", "return-policy.md", "service-sla.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r023",
+      "query" : "付完款多久能发货",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "service-sla.md", "finance-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r024",
+      "query" : "预售的东西最晚多久能发出去",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "customer-tier.md", "return-policy.md", "campaign-rule.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r025",
+      "query" : "新疆这种地方 一般几天能送到",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "ticket-sop.md", "finance-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r026",
+      "query" : "台风把路封了 快递停了五天 这算你们超时吗 又不是我的锅",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "ticket-sop.md", "compensation-standard.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r027",
+      "query" : "都一个星期了还不发 店家一直拖着 问就说在排单 我付了1299呢？？",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "return-policy.md", "compensation-standard.md", "service-sla.md", "finance-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r028",
+      "query" : "我提的工单 你们多久给个首次回复 别让我干等",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ops-metrics.md", "customer-tier.md", "ticket-sop.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r029",
+      "query" : "复杂问题说24小时给方案 现在第三天了还是那句在跟进",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "audit-policy.md", "product-guide.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r030",
+      "query" : "超时未发货的工单 你们内部按几级处理 多久要解决",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "compensation-standard.md", "ops-metrics.md", "service-sla.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r031",
+      "query" : "搞一场四万块的活动 需要谁签字",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "product-guide.md", "ticket-sop.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r032",
+      "query" : "你们一天给我发八条短信烦不烦！！半夜十一点还在响",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "customer-tier.md", "compensation-standard.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r033",
+      "query" : "我上周点了退订 昨天又收到了 你们这个退订是摆设吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "service-sla.md", "return-policy.md", "ops-metrics.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r034",
+      "query" : "同样的券 一个店铺的一个平台的 能叠着用吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "ops-metrics.md", "product-guide.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r035",
+      "query" : "活动价买的 第二天又便宜了 还能不能要差价",
+      "expectDocs" : [ "campaign-rule.md", "return-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "finance-policy.md", "ops-metrics.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r036",
+      "query" : "活动搞完了 复盘最晚几天交 要写哪几项",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "audit-policy.md", "ops-metrics.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r037",
+      "query" : "二十万以上的预算 总经理不签行不行",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "compensation-standard.md", "finance-policy.md", "service-sla.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r038",
+      "query" : "短信里写最后一天 明天就恢复原价 这种话能不能发",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "customer-tier.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r039",
+      "query" : "一单的履约成本到底算哪些东西",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "return-policy.md", "ops-metrics.md", "customer-tier.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r040",
+      "query" : "赔给客户的钱 是记在营销费用里还是别的地方",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "customer-tier.md", "campaign-rule.md", "ticket-sop.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r041",
+      "query" : "活动批下来的预算没用完 是不是过期就作废了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "service-sla.md", "ticket-sop.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r042",
+      "query" : "供应商的钱一般什么时候结 对账截止到几号",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "ticket-sop.md", "service-sla.md", "return-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r043",
+      "query" : "一单就赚三十来块 送货加赔付要花掉二十 这样是不是已经踩线了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "ops-metrics.md", "ticket-sop.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 5,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r044",
+      "query" : "账单差多少就必须写说明才能付款",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r045",
+      "query" : "成本连续两周超线 改善计划要谁点头",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "ticket-sop.md", "audit-policy.md", "return-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r046",
+      "query" : "退货率多少算正常 我们做女装的",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "product-guide.md", "return-policy.md", "customer-tier.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r047",
+      "query" : "下单转化率是怎么算的 分母是什么",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "campaign-rule.md", "ticket-sop.md", "return-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r048",
+      "query" : "这个月赔出去的钱是不是太多了 有没有个尺子量一下",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "product-guide.md", "ticket-sop.md", "compensation-standard.md", "return-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r049",
+      "query" : "客服30秒内回复这个承诺 考核的时候按什么口径看",
+      "expectDocs" : [ "service-sla.md", "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "service-sla.md", "customer-tier.md", "compensation-standard.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r050",
+      "query" : "数据量太小能不能下结论",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "audit-policy.md", "return-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r051",
+      "query" : "工单一次解决的占比 达标线多少",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "campaign-rule.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r052",
+      "query" : "服饰类退回来的比例 到多少就该紧张了",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "service-sla.md", "product-guide.md", "customer-tier.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r053",
+      "query" : "老板说转化掉了 让我拿数据说话 光给个数够吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "finance-policy.md", "audit-policy.md", "customer-tier.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r054",
+      "query" : "审计日志要留几年",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "customer-tier.md", "campaign-rule.md", "product-guide.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r055",
+      "query" : "我这个客服账号 能不能自己把退款按钮点下去",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "compensation-standard.md", "service-sla.md", "product-guide.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r056",
+      "query" : "一次性把客户名单导出来 我一个人操作行不行",
+      "expectDocs" : [ "audit-policy.md", "customer-tier.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "customer-tier.md", "compensation-standard.md", "ops-metrics.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r057",
+      "query" : "手滑点错了 那条记录能不能删掉 当没发生",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "product-guide.md", "audit-policy.md", "compensation-standard.md", "return-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r058",
+      "query" : "发现有人越权了 多久要报上去 多久整改完",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "customer-tier.md", "product-guide.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r059",
+      "query" : "我想拉客户的手机号出来做用户分析 可以吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "ticket-sop.md", "return-policy.md", "campaign-rule.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r060",
+      "query" : "新加个权限 需要走什么流程 以前的权限表要不要留",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "compensation-standard.md", "product-guide.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    } ]
+  },
+  "[DENSE]" : {
+    "embeddingId" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "total" : 60,
+    "recallAt1" : 0.8333,
+    "recallAt3" : 0.9667,
+    "recallAt5" : 0.9833,
+    "mrr" : 0.8978,
+    "hardTotal" : 22,
+    "hardRecallAt3" : 0.9091,
+    "easyTotal" : 12,
+    "easyRecallAt3" : 1.0,
+    "results" : [ {
+      "caseId" : "r001",
+      "query" : "收到货了 打开看了一眼不喜欢 能退吗 包装都还在",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "compensation-standard.md", "service-sla.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r002",
+      "query" : "我上周刚买的 今天就降了三百 这个差价还能要回来么",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r003",
+      "query" : "包装我拆了 但是东西真的一次没用过 商家说拆封就不给退 这合理吗？？",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "compensation-standard.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r004",
+      "query" : "买的车厘子 打开一半都软了流水了 这个咋弄啊",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "compensation-standard.md", "return-policy.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r005",
+      "query" : "充的会员卡 一次都没用过 现在不想用了 钱能退回来吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "customer-tier.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r006",
+      "query" : "买的时候送了个蓝牙耳机 现在耳机找不着了 主商品退回去要扣我钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "compensation-standard.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r007",
+      "query" : "用了十来天 屏幕自己黑了 开不了机 能直接换台新的不",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "compensation-standard.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r008",
+      "query" : "钱退回我银行卡 到底几天能到 你们别老说1到7天 给个准话",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "product-guide.md", "ticket-sop.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r009",
+      "query" : "页面写着特价清仓不退不换 我当时点了确认 现在还能反悔吗 定单号我发你",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r010",
+      "query" : "手机掉水里了 泡了半小时 拿去修还要钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "compensation-standard.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r011",
+      "query" : "我是你们三年老客户了 一年消费小十万 退货能不能比七天宽一点",
+      "expectDocs" : [ "customer-tier.md", "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "customer-tier.md", "compensation-standard.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r012",
+      "query" : "买了一整套锅 只想要里面那个炒锅 剩下的退回去行不行",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "compensation-standard.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r013",
+      "query" : "说好48小时发货 现在都五天了 这种能赔多少",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "service-sla.md", "product-guide.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r014",
+      "query" : "我10月3号下的单 订单号69301******56631 说好48小时发货 现在都13号了 到底发不发？？该拿多少补偿",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "return-policy.md", "product-guide.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r015",
+      "query" : "赔钱的话 是不是随便哪个客服都能直接给我",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r016",
+      "query" : "这个月光找你们要说法就第三回了 上回那单赔了80 会不会被系统拉黑不给赔了",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ticket-sop.md", "customer-tier.md", "service-sla.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r017",
+      "query" : "买的三文鱼 到的时候都臭了 冰袋全化成水 这个是不是得全赔",
+      "expectDocs" : [ "compensation-standard.md", "product-guide.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "product-guide.md", "return-policy.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r018",
+      "query" : "赔了钱连个依据条款都不写 事后被查出来算什么",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "customer-tier.md", "finance-policy.md", "product-guide.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r019",
+      "query" : "该补我多少钱 你们说了算还是有标准",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "service-sla.md", "ticket-sop.md", "return-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r020",
+      "query" : "这笔赔了500 除了找经理签字 还要不要通知别的部门",
+      "expectDocs" : [ "compensation-standard.md", "ticket-sop.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ticket-sop.md", "campaign-rule.md", "service-sla.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r021",
+      "query" : "一级客服手里最多能直接给出多少钱的东西",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "customer-tier.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r022",
+      "query" : "同一个收货地址 三个月里第五次说质量有问题 系统会怎么处理",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "ticket-sop.md", "service-sla.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r023",
+      "query" : "付完款多久能发货",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r024",
+      "query" : "预售的东西最晚多久能发出去",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "campaign-rule.md", "product-guide.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r025",
+      "query" : "新疆这种地方 一般几天能送到",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "product-guide.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r026",
+      "query" : "台风把路封了 快递停了五天 这算你们超时吗 又不是我的锅",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "return-policy.md", "product-guide.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r027",
+      "query" : "都一个星期了还不发 店家一直拖着 问就说在排单 我付了1299呢？？",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "product-guide.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r028",
+      "query" : "我提的工单 你们多久给个首次回复 别让我干等",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "ops-metrics.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r029",
+      "query" : "复杂问题说24小时给方案 现在第三天了还是那句在跟进",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "audit-policy.md", "compensation-standard.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r030",
+      "query" : "超时未发货的工单 你们内部按几级处理 多久要解决",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "compensation-standard.md", "ops-metrics.md", "return-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r031",
+      "query" : "搞一场四万块的活动 需要谁签字",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "ticket-sop.md", "audit-policy.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r032",
+      "query" : "你们一天给我发八条短信烦不烦！！半夜十一点还在响",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "service-sla.md", "customer-tier.md", "ticket-sop.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r033",
+      "query" : "我上周点了退订 昨天又收到了 你们这个退订是摆设吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "product-guide.md", "return-policy.md", "service-sla.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r034",
+      "query" : "同样的券 一个店铺的一个平台的 能叠着用吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "product-guide.md", "customer-tier.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r035",
+      "query" : "活动价买的 第二天又便宜了 还能不能要差价",
+      "expectDocs" : [ "campaign-rule.md", "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "campaign-rule.md", "product-guide.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r036",
+      "query" : "活动搞完了 复盘最晚几天交 要写哪几项",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "ticket-sop.md", "audit-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r037",
+      "query" : "二十万以上的预算 总经理不签行不行",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "ticket-sop.md", "finance-policy.md", "customer-tier.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r038",
+      "query" : "短信里写最后一天 明天就恢复原价 这种话能不能发",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "product-guide.md", "compensation-standard.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r039",
+      "query" : "一单的履约成本到底算哪些东西",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "ticket-sop.md", "customer-tier.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r040",
+      "query" : "赔给客户的钱 是记在营销费用里还是别的地方",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "customer-tier.md", "campaign-rule.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r041",
+      "query" : "活动批下来的预算没用完 是不是过期就作废了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "product-guide.md", "audit-policy.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r042",
+      "query" : "供应商的钱一般什么时候结 对账截止到几号",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "service-sla.md", "campaign-rule.md", "ticket-sop.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r043",
+      "query" : "一单就赚三十来块 送货加赔付要花掉二十 这样是不是已经踩线了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "campaign-rule.md", "finance-policy.md", "return-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r044",
+      "query" : "账单差多少就必须写说明才能付款",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "campaign-rule.md", "ticket-sop.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r045",
+      "query" : "成本连续两周超线 改善计划要谁点头",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "ticket-sop.md", "ops-metrics.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r046",
+      "query" : "退货率多少算正常 我们做女装的",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "product-guide.md", "campaign-rule.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r047",
+      "query" : "下单转化率是怎么算的 分母是什么",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "campaign-rule.md", "finance-policy.md", "ticket-sop.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r048",
+      "query" : "这个月赔出去的钱是不是太多了 有没有个尺子量一下",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "finance-policy.md", "compensation-standard.md", "campaign-rule.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 5,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r049",
+      "query" : "客服30秒内回复这个承诺 考核的时候按什么口径看",
+      "expectDocs" : [ "service-sla.md", "ops-metrics.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "ops-metrics.md", "campaign-rule.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r050",
+      "query" : "数据量太小能不能下结论",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "audit-policy.md", "customer-tier.md", "ticket-sop.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r051",
+      "query" : "工单一次解决的占比 达标线多少",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "service-sla.md", "finance-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r052",
+      "query" : "服饰类退回来的比例 到多少就该紧张了",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "product-guide.md", "return-policy.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r053",
+      "query" : "老板说转化掉了 让我拿数据说话 光给个数够吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "audit-policy.md", "campaign-rule.md", "customer-tier.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r054",
+      "query" : "审计日志要留几年",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "campaign-rule.md", "ticket-sop.md", "service-sla.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r055",
+      "query" : "我这个客服账号 能不能自己把退款按钮点下去",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "compensation-standard.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r056",
+      "query" : "一次性把客户名单导出来 我一个人操作行不行",
+      "expectDocs" : [ "audit-policy.md", "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "audit-policy.md", "ticket-sop.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r057",
+      "query" : "手滑点错了 那条记录能不能删掉 当没发生",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "return-policy.md", "product-guide.md", "ticket-sop.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r058",
+      "query" : "发现有人越权了 多久要报上去 多久整改完",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ticket-sop.md", "service-sla.md", "campaign-rule.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r059",
+      "query" : "我想拉客户的手机号出来做用户分析 可以吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "ticket-sop.md", "campaign-rule.md", "audit-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r060",
+      "query" : "新加个权限 需要走什么流程 以前的权限表要不要留",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ticket-sop.md", "customer-tier.md", "compensation-standard.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    } ]
+  },
+  "[LEXICAL, CONCEPT]" : {
+    "embeddingId" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "total" : 60,
+    "recallAt1" : 0.7333,
+    "recallAt3" : 0.95,
+    "recallAt5" : 0.95,
+    "mrr" : 0.8306,
+    "hardTotal" : 22,
+    "hardRecallAt3" : 0.9091,
+    "easyTotal" : 12,
+    "easyRecallAt3" : 1.0,
+    "results" : [ {
+      "caseId" : "r001",
+      "query" : "收到货了 打开看了一眼不喜欢 能退吗 包装都还在",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "compensation-standard.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r002",
+      "query" : "我上周刚买的 今天就降了三百 这个差价还能要回来么",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "campaign-rule.md", "finance-policy.md", "product-guide.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r003",
+      "query" : "包装我拆了 但是东西真的一次没用过 商家说拆封就不给退 这合理吗？？",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "ticket-sop.md", "product-guide.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r004",
+      "query" : "买的车厘子 打开一半都软了流水了 这个咋弄啊",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "customer-tier.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r005",
+      "query" : "充的会员卡 一次都没用过 现在不想用了 钱能退回来吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "compensation-standard.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r006",
+      "query" : "买的时候送了个蓝牙耳机 现在耳机找不着了 主商品退回去要扣我钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "ops-metrics.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r007",
+      "query" : "用了十来天 屏幕自己黑了 开不了机 能直接换台新的不",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "campaign-rule.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r008",
+      "query" : "钱退回我银行卡 到底几天能到 你们别老说1到7天 给个准话",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "return-policy.md", "ops-metrics.md", "service-sla.md", "product-guide.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r009",
+      "query" : "页面写着特价清仓不退不换 我当时点了确认 现在还能反悔吗 定单号我发你",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "service-sla.md", "finance-policy.md", "ticket-sop.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r010",
+      "query" : "手机掉水里了 泡了半小时 拿去修还要钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "customer-tier.md", "ticket-sop.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r011",
+      "query" : "我是你们三年老客户了 一年消费小十万 退货能不能比七天宽一点",
+      "expectDocs" : [ "customer-tier.md", "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "ops-metrics.md", "product-guide.md", "service-sla.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r012",
+      "query" : "买了一整套锅 只想要里面那个炒锅 剩下的退回去行不行",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "service-sla.md", "return-policy.md", "ops-metrics.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r013",
+      "query" : "说好48小时发货 现在都五天了 这种能赔多少",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "return-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r014",
+      "query" : "我10月3号下的单 订单号69301******56631 说好48小时发货 现在都13号了 到底发不发？？该拿多少补偿",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "customer-tier.md", "ticket-sop.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r015",
+      "query" : "赔钱的话 是不是随便哪个客服都能直接给我",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "finance-policy.md", "ops-metrics.md", "return-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r016",
+      "query" : "这个月光找你们要说法就第三回了 上回那单赔了80 会不会被系统拉黑不给赔了",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "product-guide.md", "ticket-sop.md", "finance-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r017",
+      "query" : "买的三文鱼 到的时候都臭了 冰袋全化成水 这个是不是得全赔",
+      "expectDocs" : [ "compensation-standard.md", "product-guide.md" ],
+      "retrievedDocs" : [ "return-policy.md", "compensation-standard.md", "service-sla.md", "campaign-rule.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r018",
+      "query" : "赔了钱连个依据条款都不写 事后被查出来算什么",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "audit-policy.md", "campaign-rule.md", "ticket-sop.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r019",
+      "query" : "该补我多少钱 你们说了算还是有标准",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "ops-metrics.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r020",
+      "query" : "这笔赔了500 除了找经理签字 还要不要通知别的部门",
+      "expectDocs" : [ "compensation-standard.md", "ticket-sop.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "compensation-standard.md", "finance-policy.md", "return-policy.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r021",
+      "query" : "一级客服手里最多能直接给出多少钱的东西",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ticket-sop.md", "audit-policy.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r022",
+      "query" : "同一个收货地址 三个月里第五次说质量有问题 系统会怎么处理",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ticket-sop.md", "return-policy.md", "service-sla.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r023",
+      "query" : "付完款多久能发货",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "service-sla.md", "ticket-sop.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r024",
+      "query" : "预售的东西最晚多久能发出去",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "finance-policy.md", "return-policy.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r025",
+      "query" : "新疆这种地方 一般几天能送到",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "customer-tier.md", "return-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r026",
+      "query" : "台风把路封了 快递停了五天 这算你们超时吗 又不是我的锅",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "return-policy.md", "ticket-sop.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r027",
+      "query" : "都一个星期了还不发 店家一直拖着 问就说在排单 我付了1299呢？？",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "return-policy.md", "compensation-standard.md", "service-sla.md", "finance-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r028",
+      "query" : "我提的工单 你们多久给个首次回复 别让我干等",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "compensation-standard.md", "return-policy.md", "customer-tier.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r029",
+      "query" : "复杂问题说24小时给方案 现在第三天了还是那句在跟进",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "audit-policy.md", "product-guide.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r030",
+      "query" : "超时未发货的工单 你们内部按几级处理 多久要解决",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ticket-sop.md", "return-policy.md", "service-sla.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r031",
+      "query" : "搞一场四万块的活动 需要谁签字",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "compensation-standard.md", "return-policy.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r032",
+      "query" : "你们一天给我发八条短信烦不烦！！半夜十一点还在响",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "customer-tier.md", "compensation-standard.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r033",
+      "query" : "我上周点了退订 昨天又收到了 你们这个退订是摆设吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "service-sla.md", "ops-metrics.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r034",
+      "query" : "同样的券 一个店铺的一个平台的 能叠着用吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "compensation-standard.md", "customer-tier.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r035",
+      "query" : "活动价买的 第二天又便宜了 还能不能要差价",
+      "expectDocs" : [ "campaign-rule.md", "return-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "finance-policy.md", "customer-tier.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r036",
+      "query" : "活动搞完了 复盘最晚几天交 要写哪几项",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "customer-tier.md", "service-sla.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r037",
+      "query" : "二十万以上的预算 总经理不签行不行",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "audit-policy.md", "compensation-standard.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r038",
+      "query" : "短信里写最后一天 明天就恢复原价 这种话能不能发",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "customer-tier.md", "finance-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r039",
+      "query" : "一单的履约成本到底算哪些东西",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "customer-tier.md", "return-policy.md", "campaign-rule.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r040",
+      "query" : "赔给客户的钱 是记在营销费用里还是别的地方",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "customer-tier.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r041",
+      "query" : "活动批下来的预算没用完 是不是过期就作废了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "audit-policy.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r042",
+      "query" : "供应商的钱一般什么时候结 对账截止到几号",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "ticket-sop.md", "service-sla.md", "return-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r043",
+      "query" : "一单就赚三十来块 送货加赔付要花掉二十 这样是不是已经踩线了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ops-metrics.md", "finance-policy.md", "return-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 3,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r044",
+      "query" : "账单差多少就必须写说明才能付款",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r045",
+      "query" : "成本连续两周超线 改善计划要谁点头",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "audit-policy.md", "campaign-rule.md", "ticket-sop.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r046",
+      "query" : "退货率多少算正常 我们做女装的",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "return-policy.md", "product-guide.md", "service-sla.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r047",
+      "query" : "下单转化率是怎么算的 分母是什么",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "audit-policy.md", "campaign-rule.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r048",
+      "query" : "这个月赔出去的钱是不是太多了 有没有个尺子量一下",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "product-guide.md", "ticket-sop.md", "compensation-standard.md", "return-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r049",
+      "query" : "客服30秒内回复这个承诺 考核的时候按什么口径看",
+      "expectDocs" : [ "service-sla.md", "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "service-sla.md", "customer-tier.md", "compensation-standard.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r050",
+      "query" : "数据量太小能不能下结论",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ops-metrics.md", "ticket-sop.md", "return-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r051",
+      "query" : "工单一次解决的占比 达标线多少",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "campaign-rule.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r052",
+      "query" : "服饰类退回来的比例 到多少就该紧张了",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ops-metrics.md", "return-policy.md", "product-guide.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r053",
+      "query" : "老板说转化掉了 让我拿数据说话 光给个数够吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "audit-policy.md", "ticket-sop.md", "finance-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r054",
+      "query" : "审计日志要留几年",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "compensation-standard.md", "customer-tier.md", "campaign-rule.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r055",
+      "query" : "我这个客服账号 能不能自己把退款按钮点下去",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "service-sla.md", "product-guide.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r056",
+      "query" : "一次性把客户名单导出来 我一个人操作行不行",
+      "expectDocs" : [ "audit-policy.md", "customer-tier.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "customer-tier.md", "compensation-standard.md", "ops-metrics.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r057",
+      "query" : "手滑点错了 那条记录能不能删掉 当没发生",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "product-guide.md", "compensation-standard.md", "return-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r058",
+      "query" : "发现有人越权了 多久要报上去 多久整改完",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "compensation-standard.md", "campaign-rule.md", "return-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r059",
+      "query" : "我想拉客户的手机号出来做用户分析 可以吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "ticket-sop.md", "return-policy.md", "campaign-rule.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r060",
+      "query" : "新加个权限 需要走什么流程 以前的权限表要不要留",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "campaign-rule.md", "ticket-sop.md", "compensation-standard.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    } ]
+  },
+  "[LEXICAL, DENSE]" : {
+    "embeddingId" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "total" : 60,
+    "recallAt1" : 0.85,
+    "recallAt3" : 0.95,
+    "recallAt5" : 0.9667,
+    "mrr" : 0.9042,
+    "hardTotal" : 22,
+    "hardRecallAt3" : 0.8636,
+    "easyTotal" : 12,
+    "easyRecallAt3" : 1.0,
+    "results" : [ {
+      "caseId" : "r001",
+      "query" : "收到货了 打开看了一眼不喜欢 能退吗 包装都还在",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "campaign-rule.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r002",
+      "query" : "我上周刚买的 今天就降了三百 这个差价还能要回来么",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "campaign-rule.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r003",
+      "query" : "包装我拆了 但是东西真的一次没用过 商家说拆封就不给退 这合理吗？？",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r004",
+      "query" : "买的车厘子 打开一半都软了流水了 这个咋弄啊",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "finance-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r005",
+      "query" : "充的会员卡 一次都没用过 现在不想用了 钱能退回来吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "service-sla.md", "return-policy.md", "campaign-rule.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r006",
+      "query" : "买的时候送了个蓝牙耳机 现在耳机找不着了 主商品退回去要扣我钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "compensation-standard.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r007",
+      "query" : "用了十来天 屏幕自己黑了 开不了机 能直接换台新的不",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r008",
+      "query" : "钱退回我银行卡 到底几天能到 你们别老说1到7天 给个准话",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "product-guide.md", "return-policy.md", "compensation-standard.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r009",
+      "query" : "页面写着特价清仓不退不换 我当时点了确认 现在还能反悔吗 定单号我发你",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r010",
+      "query" : "手机掉水里了 泡了半小时 拿去修还要钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "service-sla.md", "ticket-sop.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r011",
+      "query" : "我是你们三年老客户了 一年消费小十万 退货能不能比七天宽一点",
+      "expectDocs" : [ "customer-tier.md", "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "customer-tier.md", "product-guide.md", "campaign-rule.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r012",
+      "query" : "买了一整套锅 只想要里面那个炒锅 剩下的退回去行不行",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r013",
+      "query" : "说好48小时发货 现在都五天了 这种能赔多少",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "return-policy.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r014",
+      "query" : "我10月3号下的单 订单号69301******56631 说好48小时发货 现在都13号了 到底发不发？？该拿多少补偿",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "return-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r015",
+      "query" : "赔钱的话 是不是随便哪个客服都能直接给我",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "customer-tier.md", "finance-policy.md", "return-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r016",
+      "query" : "这个月光找你们要说法就第三回了 上回那单赔了80 会不会被系统拉黑不给赔了",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "product-guide.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r017",
+      "query" : "买的三文鱼 到的时候都臭了 冰袋全化成水 这个是不是得全赔",
+      "expectDocs" : [ "compensation-standard.md", "product-guide.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "product-guide.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r018",
+      "query" : "赔了钱连个依据条款都不写 事后被查出来算什么",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "finance-policy.md", "ops-metrics.md", "customer-tier.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r019",
+      "query" : "该补我多少钱 你们说了算还是有标准",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "return-policy.md", "ops-metrics.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r020",
+      "query" : "这笔赔了500 除了找经理签字 还要不要通知别的部门",
+      "expectDocs" : [ "compensation-standard.md", "ticket-sop.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "compensation-standard.md", "ticket-sop.md", "return-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r021",
+      "query" : "一级客服手里最多能直接给出多少钱的东西",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "customer-tier.md", "service-sla.md", "ticket-sop.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r022",
+      "query" : "同一个收货地址 三个月里第五次说质量有问题 系统会怎么处理",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "product-guide.md", "ticket-sop.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r023",
+      "query" : "付完款多久能发货",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "finance-policy.md", "ticket-sop.md", "return-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r024",
+      "query" : "预售的东西最晚多久能发出去",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "campaign-rule.md", "compensation-standard.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r025",
+      "query" : "新疆这种地方 一般几天能送到",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "ticket-sop.md", "campaign-rule.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r026",
+      "query" : "台风把路封了 快递停了五天 这算你们超时吗 又不是我的锅",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "ticket-sop.md", "return-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r027",
+      "query" : "都一个星期了还不发 店家一直拖着 问就说在排单 我付了1299呢？？",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "compensation-standard.md", "product-guide.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r028",
+      "query" : "我提的工单 你们多久给个首次回复 别让我干等",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ops-metrics.md", "ticket-sop.md", "customer-tier.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r029",
+      "query" : "复杂问题说24小时给方案 现在第三天了还是那句在跟进",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "audit-policy.md", "product-guide.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r030",
+      "query" : "超时未发货的工单 你们内部按几级处理 多久要解决",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "service-sla.md", "compensation-standard.md", "ops-metrics.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r031",
+      "query" : "搞一场四万块的活动 需要谁签字",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "ticket-sop.md", "product-guide.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r032",
+      "query" : "你们一天给我发八条短信烦不烦！！半夜十一点还在响",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "service-sla.md", "customer-tier.md", "ops-metrics.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r033",
+      "query" : "我上周点了退订 昨天又收到了 你们这个退订是摆设吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "product-guide.md", "service-sla.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r034",
+      "query" : "同样的券 一个店铺的一个平台的 能叠着用吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "product-guide.md", "customer-tier.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r035",
+      "query" : "活动价买的 第二天又便宜了 还能不能要差价",
+      "expectDocs" : [ "campaign-rule.md", "return-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "finance-policy.md", "product-guide.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r036",
+      "query" : "活动搞完了 复盘最晚几天交 要写哪几项",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "service-sla.md", "ops-metrics.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r037",
+      "query" : "二十万以上的预算 总经理不签行不行",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "compensation-standard.md", "customer-tier.md", "finance-policy.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r038",
+      "query" : "短信里写最后一天 明天就恢复原价 这种话能不能发",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "customer-tier.md", "service-sla.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r039",
+      "query" : "一单的履约成本到底算哪些东西",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "ticket-sop.md", "customer-tier.md", "compensation-standard.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r040",
+      "query" : "赔给客户的钱 是记在营销费用里还是别的地方",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "customer-tier.md", "campaign-rule.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r041",
+      "query" : "活动批下来的预算没用完 是不是过期就作废了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "service-sla.md", "audit-policy.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r042",
+      "query" : "供应商的钱一般什么时候结 对账截止到几号",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "service-sla.md", "ticket-sop.md", "compensation-standard.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r043",
+      "query" : "一单就赚三十来块 送货加赔付要花掉二十 这样是不是已经踩线了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "campaign-rule.md", "return-policy.md", "finance-policy.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 4,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r044",
+      "query" : "账单差多少就必须写说明才能付款",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "return-policy.md", "ops-metrics.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r045",
+      "query" : "成本连续两周超线 改善计划要谁点头",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "ticket-sop.md", "service-sla.md", "ops-metrics.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r046",
+      "query" : "退货率多少算正常 我们做女装的",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "product-guide.md", "return-policy.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r047",
+      "query" : "下单转化率是怎么算的 分母是什么",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "campaign-rule.md", "ticket-sop.md", "return-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r048",
+      "query" : "这个月赔出去的钱是不是太多了 有没有个尺子量一下",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "campaign-rule.md", "product-guide.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r049",
+      "query" : "客服30秒内回复这个承诺 考核的时候按什么口径看",
+      "expectDocs" : [ "service-sla.md", "ops-metrics.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ops-metrics.md", "compensation-standard.md", "campaign-rule.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r050",
+      "query" : "数据量太小能不能下结论",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "audit-policy.md", "ticket-sop.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r051",
+      "query" : "工单一次解决的占比 达标线多少",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "service-sla.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r052",
+      "query" : "服饰类退回来的比例 到多少就该紧张了",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "product-guide.md", "service-sla.md", "campaign-rule.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r053",
+      "query" : "老板说转化掉了 让我拿数据说话 光给个数够吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "audit-policy.md", "finance-policy.md", "ticket-sop.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r054",
+      "query" : "审计日志要留几年",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "product-guide.md", "ticket-sop.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r055",
+      "query" : "我这个客服账号 能不能自己把退款按钮点下去",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r056",
+      "query" : "一次性把客户名单导出来 我一个人操作行不行",
+      "expectDocs" : [ "audit-policy.md", "customer-tier.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "customer-tier.md", "ops-metrics.md", "ticket-sop.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r057",
+      "query" : "手滑点错了 那条记录能不能删掉 当没发生",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "product-guide.md", "return-policy.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r058",
+      "query" : "发现有人越权了 多久要报上去 多久整改完",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ticket-sop.md", "compensation-standard.md", "campaign-rule.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r059",
+      "query" : "我想拉客户的手机号出来做用户分析 可以吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "ticket-sop.md", "campaign-rule.md", "return-policy.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r060",
+      "query" : "新加个权限 需要走什么流程 以前的权限表要不要留",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ticket-sop.md", "customer-tier.md", "campaign-rule.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    } ]
+  },
+  "[LEXICAL, DENSE, CONCEPT]" : {
+    "embeddingId" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "total" : 60,
+    "recallAt1" : 0.7833,
+    "recallAt3" : 0.95,
+    "recallAt5" : 0.9667,
+    "mrr" : 0.87,
+    "hardTotal" : 22,
+    "hardRecallAt3" : 0.9091,
+    "easyTotal" : 12,
+    "easyRecallAt3" : 1.0,
+    "results" : [ {
+      "caseId" : "r001",
+      "query" : "收到货了 打开看了一眼不喜欢 能退吗 包装都还在",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "campaign-rule.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r002",
+      "query" : "我上周刚买的 今天就降了三百 这个差价还能要回来么",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "campaign-rule.md", "product-guide.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r003",
+      "query" : "包装我拆了 但是东西真的一次没用过 商家说拆封就不给退 这合理吗？？",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r004",
+      "query" : "买的车厘子 打开一半都软了流水了 这个咋弄啊",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "finance-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r005",
+      "query" : "充的会员卡 一次都没用过 现在不想用了 钱能退回来吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "service-sla.md", "return-policy.md", "compensation-standard.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r006",
+      "query" : "买的时候送了个蓝牙耳机 现在耳机找不着了 主商品退回去要扣我钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "ops-metrics.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r007",
+      "query" : "用了十来天 屏幕自己黑了 开不了机 能直接换台新的不",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r008",
+      "query" : "钱退回我银行卡 到底几天能到 你们别老说1到7天 给个准话",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "product-guide.md", "ops-metrics.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r009",
+      "query" : "页面写着特价清仓不退不换 我当时点了确认 现在还能反悔吗 定单号我发你",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r010",
+      "query" : "手机掉水里了 泡了半小时 拿去修还要钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "service-sla.md", "ticket-sop.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r011",
+      "query" : "我是你们三年老客户了 一年消费小十万 退货能不能比七天宽一点",
+      "expectDocs" : [ "customer-tier.md", "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "ops-metrics.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r012",
+      "query" : "买了一整套锅 只想要里面那个炒锅 剩下的退回去行不行",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "ops-metrics.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r013",
+      "query" : "说好48小时发货 现在都五天了 这种能赔多少",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "return-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r014",
+      "query" : "我10月3号下的单 订单号69301******56631 说好48小时发货 现在都13号了 到底发不发？？该拿多少补偿",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "return-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r015",
+      "query" : "赔钱的话 是不是随便哪个客服都能直接给我",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "finance-policy.md", "customer-tier.md", "return-policy.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r016",
+      "query" : "这个月光找你们要说法就第三回了 上回那单赔了80 会不会被系统拉黑不给赔了",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "product-guide.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r017",
+      "query" : "买的三文鱼 到的时候都臭了 冰袋全化成水 这个是不是得全赔",
+      "expectDocs" : [ "compensation-standard.md", "product-guide.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "product-guide.md", "campaign-rule.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r018",
+      "query" : "赔了钱连个依据条款都不写 事后被查出来算什么",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "audit-policy.md", "ticket-sop.md", "campaign-rule.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r019",
+      "query" : "该补我多少钱 你们说了算还是有标准",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "ops-metrics.md", "return-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r020",
+      "query" : "这笔赔了500 除了找经理签字 还要不要通知别的部门",
+      "expectDocs" : [ "compensation-standard.md", "ticket-sop.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "compensation-standard.md", "audit-policy.md", "return-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r021",
+      "query" : "一级客服手里最多能直接给出多少钱的东西",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ticket-sop.md", "audit-policy.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r022",
+      "query" : "同一个收货地址 三个月里第五次说质量有问题 系统会怎么处理",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "product-guide.md", "ticket-sop.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r023",
+      "query" : "付完款多久能发货",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "return-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r024",
+      "query" : "预售的东西最晚多久能发出去",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "return-policy.md", "ticket-sop.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r025",
+      "query" : "新疆这种地方 一般几天能送到",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "customer-tier.md", "return-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r026",
+      "query" : "台风把路封了 快递停了五天 这算你们超时吗 又不是我的锅",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "return-policy.md", "product-guide.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r027",
+      "query" : "都一个星期了还不发 店家一直拖着 问就说在排单 我付了1299呢？？",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "compensation-standard.md", "product-guide.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r028",
+      "query" : "我提的工单 你们多久给个首次回复 别让我干等",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "compensation-standard.md", "return-policy.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 5,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r029",
+      "query" : "复杂问题说24小时给方案 现在第三天了还是那句在跟进",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "audit-policy.md", "product-guide.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r030",
+      "query" : "超时未发货的工单 你们内部按几级处理 多久要解决",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ticket-sop.md", "return-policy.md", "service-sla.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r031",
+      "query" : "搞一场四万块的活动 需要谁签字",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "compensation-standard.md", "audit-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r032",
+      "query" : "你们一天给我发八条短信烦不烦！！半夜十一点还在响",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "service-sla.md", "customer-tier.md", "ops-metrics.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r033",
+      "query" : "我上周点了退订 昨天又收到了 你们这个退订是摆设吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "product-guide.md", "service-sla.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r034",
+      "query" : "同样的券 一个店铺的一个平台的 能叠着用吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "compensation-standard.md", "customer-tier.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r035",
+      "query" : "活动价买的 第二天又便宜了 还能不能要差价",
+      "expectDocs" : [ "campaign-rule.md", "return-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "finance-policy.md", "customer-tier.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r036",
+      "query" : "活动搞完了 复盘最晚几天交 要写哪几项",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "service-sla.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r037",
+      "query" : "二十万以上的预算 总经理不签行不行",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "audit-policy.md", "finance-policy.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r038",
+      "query" : "短信里写最后一天 明天就恢复原价 这种话能不能发",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "customer-tier.md", "service-sla.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r039",
+      "query" : "一单的履约成本到底算哪些东西",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "customer-tier.md", "compensation-standard.md", "ticket-sop.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r040",
+      "query" : "赔给客户的钱 是记在营销费用里还是别的地方",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "campaign-rule.md", "customer-tier.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r041",
+      "query" : "活动批下来的预算没用完 是不是过期就作废了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "audit-policy.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r042",
+      "query" : "供应商的钱一般什么时候结 对账截止到几号",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "service-sla.md", "ticket-sop.md", "compensation-standard.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r043",
+      "query" : "一单就赚三十来块 送货加赔付要花掉二十 这样是不是已经踩线了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "finance-policy.md", "ops-metrics.md", "return-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r044",
+      "query" : "账单差多少就必须写说明才能付款",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "return-policy.md", "ops-metrics.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r045",
+      "query" : "成本连续两周超线 改善计划要谁点头",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "audit-policy.md", "ticket-sop.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r046",
+      "query" : "退货率多少算正常 我们做女装的",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "return-policy.md", "product-guide.md", "service-sla.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r047",
+      "query" : "下单转化率是怎么算的 分母是什么",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "campaign-rule.md", "return-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r048",
+      "query" : "这个月赔出去的钱是不是太多了 有没有个尺子量一下",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "campaign-rule.md", "product-guide.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r049",
+      "query" : "客服30秒内回复这个承诺 考核的时候按什么口径看",
+      "expectDocs" : [ "service-sla.md", "ops-metrics.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ops-metrics.md", "compensation-standard.md", "campaign-rule.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r050",
+      "query" : "数据量太小能不能下结论",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "audit-policy.md", "ticket-sop.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r051",
+      "query" : "工单一次解决的占比 达标线多少",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "service-sla.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r052",
+      "query" : "服饰类退回来的比例 到多少就该紧张了",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "service-sla.md", "product-guide.md", "return-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r053",
+      "query" : "老板说转化掉了 让我拿数据说话 光给个数够吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ops-metrics.md", "ticket-sop.md", "finance-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r054",
+      "query" : "审计日志要留几年",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "compensation-standard.md", "product-guide.md", "ticket-sop.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r055",
+      "query" : "我这个客服账号 能不能自己把退款按钮点下去",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "compensation-standard.md", "product-guide.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r056",
+      "query" : "一次性把客户名单导出来 我一个人操作行不行",
+      "expectDocs" : [ "audit-policy.md", "customer-tier.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "customer-tier.md", "ops-metrics.md", "ticket-sop.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r057",
+      "query" : "手滑点错了 那条记录能不能删掉 当没发生",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "product-guide.md", "compensation-standard.md", "return-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r058",
+      "query" : "发现有人越权了 多久要报上去 多久整改完",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ticket-sop.md", "compensation-standard.md", "finance-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r059",
+      "query" : "我想拉客户的手机号出来做用户分析 可以吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "ticket-sop.md", "campaign-rule.md", "return-policy.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r060",
+      "query" : "新加个权限 需要走什么流程 以前的权限表要不要留",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ticket-sop.md", "campaign-rule.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    } ]
+  },
+  "all+rerank-weight-0.6" : {
+    "embeddingId" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+    "total" : 60,
+    "recallAt1" : 0.8167,
+    "recallAt3" : 0.9333,
+    "recallAt5" : 0.9667,
+    "mrr" : 0.8825,
+    "hardTotal" : 22,
+    "hardRecallAt3" : 0.8636,
+    "easyTotal" : 12,
+    "easyRecallAt3" : 1.0,
+    "results" : [ {
+      "caseId" : "r001",
+      "query" : "收到货了 打开看了一眼不喜欢 能退吗 包装都还在",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "campaign-rule.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r002",
+      "query" : "我上周刚买的 今天就降了三百 这个差价还能要回来么",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "campaign-rule.md", "product-guide.md", "customer-tier.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r003",
+      "query" : "包装我拆了 但是东西真的一次没用过 商家说拆封就不给退 这合理吗？？",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "campaign-rule.md", "compensation-standard.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r004",
+      "query" : "买的车厘子 打开一半都软了流水了 这个咋弄啊",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "compensation-standard.md", "customer-tier.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r005",
+      "query" : "充的会员卡 一次都没用过 现在不想用了 钱能退回来吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "service-sla.md", "return-policy.md", "compensation-standard.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r006",
+      "query" : "买的时候送了个蓝牙耳机 现在耳机找不着了 主商品退回去要扣我钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "ops-metrics.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r007",
+      "query" : "用了十来天 屏幕自己黑了 开不了机 能直接换台新的不",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "compensation-standard.md", "product-guide.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r008",
+      "query" : "钱退回我银行卡 到底几天能到 你们别老说1到7天 给个准话",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "return-policy.md", "service-sla.md", "product-guide.md", "ops-metrics.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r009",
+      "query" : "页面写着特价清仓不退不换 我当时点了确认 现在还能反悔吗 定单号我发你",
+      "expectDocs" : [ "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "customer-tier.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r010",
+      "query" : "手机掉水里了 泡了半小时 拿去修还要钱吗",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "service-sla.md", "ticket-sop.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r011",
+      "query" : "我是你们三年老客户了 一年消费小十万 退货能不能比七天宽一点",
+      "expectDocs" : [ "customer-tier.md", "return-policy.md" ],
+      "retrievedDocs" : [ "return-policy.md", "product-guide.md", "service-sla.md", "ops-metrics.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r012",
+      "query" : "买了一整套锅 只想要里面那个炒锅 剩下的退回去行不行",
+      "expectDocs" : [ "product-guide.md" ],
+      "retrievedDocs" : [ "product-guide.md", "return-policy.md", "service-sla.md", "ops-metrics.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "退款退货",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r013",
+      "query" : "说好48小时发货 现在都五天了 这种能赔多少",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "return-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r014",
+      "query" : "我10月3号下的单 订单号69301******56631 说好48小时发货 现在都13号了 到底发不发？？该拿多少补偿",
+      "expectDocs" : [ "compensation-standard.md", "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "finance-policy.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r015",
+      "query" : "赔钱的话 是不是随便哪个客服都能直接给我",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "finance-policy.md", "customer-tier.md", "ops-metrics.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r016",
+      "query" : "这个月光找你们要说法就第三回了 上回那单赔了80 会不会被系统拉黑不给赔了",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "ticket-sop.md", "product-guide.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r017",
+      "query" : "买的三文鱼 到的时候都臭了 冰袋全化成水 这个是不是得全赔",
+      "expectDocs" : [ "compensation-standard.md", "product-guide.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "product-guide.md", "service-sla.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r018",
+      "query" : "赔了钱连个依据条款都不写 事后被查出来算什么",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "audit-policy.md", "campaign-rule.md", "ticket-sop.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r019",
+      "query" : "该补我多少钱 你们说了算还是有标准",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "ops-metrics.md", "return-policy.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r020",
+      "query" : "这笔赔了500 除了找经理签字 还要不要通知别的部门",
+      "expectDocs" : [ "compensation-standard.md", "ticket-sop.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "compensation-standard.md", "audit-policy.md", "finance-policy.md", "service-sla.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "赔付标准",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r021",
+      "query" : "一级客服手里最多能直接给出多少钱的东西",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ticket-sop.md", "audit-policy.md", "service-sla.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r022",
+      "query" : "同一个收货地址 三个月里第五次说质量有问题 系统会怎么处理",
+      "expectDocs" : [ "compensation-standard.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "ticket-sop.md", "product-guide.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "赔付标准",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r023",
+      "query" : "付完款多久能发货",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "service-sla.md", "return-policy.md", "ticket-sop.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r024",
+      "query" : "预售的东西最晚多久能发出去",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "ticket-sop.md", "finance-policy.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r025",
+      "query" : "新疆这种地方 一般几天能送到",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "customer-tier.md", "return-policy.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r026",
+      "query" : "台风把路封了 快递停了五天 这算你们超时吗 又不是我的锅",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "compensation-standard.md", "ticket-sop.md", "return-policy.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r027",
+      "query" : "都一个星期了还不发 店家一直拖着 问就说在排单 我付了1299呢？？",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "return-policy.md", "compensation-standard.md", "product-guide.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r028",
+      "query" : "我提的工单 你们多久给个首次回复 别让我干等",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "ticket-sop.md", "compensation-standard.md", "finance-policy.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 5,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r029",
+      "query" : "复杂问题说24小时给方案 现在第三天了还是那句在跟进",
+      "expectDocs" : [ "service-sla.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ticket-sop.md", "audit-policy.md", "product-guide.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "物流时效",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r030",
+      "query" : "超时未发货的工单 你们内部按几级处理 多久要解决",
+      "expectDocs" : [ "ticket-sop.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "ticket-sop.md", "return-policy.md", "service-sla.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "物流时效",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r031",
+      "query" : "搞一场四万块的活动 需要谁签字",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "compensation-standard.md", "return-policy.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r032",
+      "query" : "你们一天给我发八条短信烦不烦！！半夜十一点还在响",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "service-sla.md", "return-policy.md", "customer-tier.md", "ops-metrics.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r033",
+      "query" : "我上周点了退订 昨天又收到了 你们这个退订是摆设吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "product-guide.md", "service-sla.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r034",
+      "query" : "同样的券 一个店铺的一个平台的 能叠着用吗",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "compensation-standard.md", "customer-tier.md", "finance-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r035",
+      "query" : "活动价买的 第二天又便宜了 还能不能要差价",
+      "expectDocs" : [ "campaign-rule.md", "return-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "finance-policy.md", "customer-tier.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r036",
+      "query" : "活动搞完了 复盘最晚几天交 要写哪几项",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "service-sla.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r037",
+      "query" : "二十万以上的预算 总经理不签行不行",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "audit-policy.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r038",
+      "query" : "短信里写最后一天 明天就恢复原价 这种话能不能发",
+      "expectDocs" : [ "campaign-rule.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "return-policy.md", "customer-tier.md", "service-sla.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "营销活动",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r039",
+      "query" : "一单的履约成本到底算哪些东西",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "customer-tier.md", "ticket-sop.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r040",
+      "query" : "赔给客户的钱 是记在营销费用里还是别的地方",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "customer-tier.md", "compensation-standard.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r041",
+      "query" : "活动批下来的预算没用完 是不是过期就作废了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "campaign-rule.md", "finance-policy.md", "audit-policy.md", "compensation-standard.md", "return-policy.md" ],
+      "rankOfFirstHit" : 2,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r042",
+      "query" : "供应商的钱一般什么时候结 对账截止到几号",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "ticket-sop.md", "service-sla.md", "compensation-standard.md", "product-guide.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r043",
+      "query" : "一单就赚三十来块 送货加赔付要花掉二十 这样是不是已经踩线了",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "ops-metrics.md", "return-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r044",
+      "query" : "账单差多少就必须写说明才能付款",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "compensation-standard.md", "return-policy.md", "ops-metrics.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r045",
+      "query" : "成本连续两周超线 改善计划要谁点头",
+      "expectDocs" : [ "finance-policy.md" ],
+      "retrievedDocs" : [ "finance-policy.md", "campaign-rule.md", "audit-policy.md", "ticket-sop.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "财务成本",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r046",
+      "query" : "退货率多少算正常 我们做女装的",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "return-policy.md", "product-guide.md", "service-sla.md", "audit-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r047",
+      "query" : "下单转化率是怎么算的 分母是什么",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "audit-policy.md", "campaign-rule.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r048",
+      "query" : "这个月赔出去的钱是不是太多了 有没有个尺子量一下",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "compensation-standard.md", "campaign-rule.md", "product-guide.md", "return-policy.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r049",
+      "query" : "客服30秒内回复这个承诺 考核的时候按什么口径看",
+      "expectDocs" : [ "service-sla.md", "ops-metrics.md" ],
+      "retrievedDocs" : [ "service-sla.md", "ops-metrics.md", "compensation-standard.md", "return-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r050",
+      "query" : "数据量太小能不能下结论",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "audit-policy.md", "ticket-sop.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r051",
+      "query" : "工单一次解决的占比 达标线多少",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "ticket-sop.md", "service-sla.md", "campaign-rule.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r052",
+      "query" : "服饰类退回来的比例 到多少就该紧张了",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "service-sla.md", "product-guide.md", "return-policy.md", "ops-metrics.md", "compensation-standard.md" ],
+      "rankOfFirstHit" : 4,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r053",
+      "query" : "老板说转化掉了 让我拿数据说话 光给个数够吗",
+      "expectDocs" : [ "ops-metrics.md" ],
+      "retrievedDocs" : [ "ops-metrics.md", "audit-policy.md", "ticket-sop.md", "finance-policy.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "指标分析",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r054",
+      "query" : "审计日志要留几年",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "compensation-standard.md", "product-guide.md", "customer-tier.md", "service-sla.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "easy"
+    }, {
+      "caseId" : "r055",
+      "query" : "我这个客服账号 能不能自己把退款按钮点下去",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "compensation-standard.md", "return-policy.md", "product-guide.md", "service-sla.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 0,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r056",
+      "query" : "一次性把客户名单导出来 我一个人操作行不行",
+      "expectDocs" : [ "audit-policy.md", "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "audit-policy.md", "compensation-standard.md", "ops-metrics.md", "ticket-sop.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r057",
+      "query" : "手滑点错了 那条记录能不能删掉 当没发生",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "product-guide.md", "compensation-standard.md", "campaign-rule.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "hard"
+    }, {
+      "caseId" : "r058",
+      "query" : "发现有人越权了 多久要报上去 多久整改完",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ticket-sop.md", "compensation-standard.md", "finance-policy.md", "campaign-rule.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r059",
+      "query" : "我想拉客户的手机号出来做用户分析 可以吗",
+      "expectDocs" : [ "customer-tier.md" ],
+      "retrievedDocs" : [ "customer-tier.md", "ticket-sop.md", "campaign-rule.md", "product-guide.md", "return-policy.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    }, {
+      "caseId" : "r060",
+      "query" : "新加个权限 需要走什么流程 以前的权限表要不要留",
+      "expectDocs" : [ "audit-policy.md" ],
+      "retrievedDocs" : [ "audit-policy.md", "ticket-sop.md", "campaign-rule.md", "compensation-standard.md", "customer-tier.md" ],
+      "rankOfFirstHit" : 1,
+      "category" : "合规审计",
+      "difficulty" : "medium"
+    } ]
+  },
+  "metricDefinition" : "Hit@k: any expected document appears in first k distinct documents; legacy field names recallAtK",
+  "split" : "development; previously used for weight tuning"
+}

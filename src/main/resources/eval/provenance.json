@@ -1,0 +1,28 @@
+{
+  "version": "2026-10-21",
+  "development": {
+    "file": "retrieval-cases.json",
+    "size": 60,
+    "usedForTuning": true,
+    "origin": "legacy synthetic/rewritten queries; original complaint URLs and human annotation not verified"
+  },
+  "holdout": {
+    "file": "retrieval-holdout.json",
+    "size": 20,
+    "usedForTuning": false,
+    "author": "AI-assisted authored cases",
+    "humanReview": "pending",
+    "source": "project knowledge markdown policies"
+  },
+  "live": {
+    "file": "agent-live-cases.json",
+    "size": 7,
+    "source": "synthetic multi-order sandbox business scenarios",
+    "humanReview": "pending"
+  },
+  "notes": [
+    "No claim that hard queries have mathematically zero lexical overlap",
+    "Hit@k means at least one relevant document; not all-relevant-document recall",
+    "Do not tune using holdout results; new tuning requires a fresh frozen test split"
+  ]
+}

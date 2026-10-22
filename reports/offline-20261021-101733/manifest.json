@@ -1,0 +1,27 @@
+{
+  "startedAt" : "2026-10-21T02:17:33.912401200Z",
+  "finishedAt" : "2026-10-21T02:17:34.634229600Z",
+  "llm" : "demo-deterministic-rules",
+  "embedding" : "local-feature-hashing-concepts-1024d",
+  "learnedEmbedding" : false,
+  "dataset" : "eval/cases.json",
+  "casesHash" : "a6844ace177589c36b23129a84fe012146b1d8289616e0b73d16db9ffe8faae1",
+  "knowledgeHash" : "4eed7c30dc336769e7d8da1c84e2ccb7c6ab7892ceffeaef0aad813329daf45c",
+  "promptHash" : "ea8fa5edd58741eb92cca268914d27c0f7b0c2d8bdfc95bb91382601e9aa8a97",
+  "trials" : 2,
+  "casesPerTrial" : 5,
+  "modelRequests" : 26,
+  "inputTokens" : 16384,
+  "outputTokens" : 3390,
+  "usageEstimated" : true,
+  "requestLimit" : 60,
+  "tokenLimit" : 150000,
+  "strictTools" : "false",
+  "retrievalConfig" : {
+    "rrfK" : 60,
+    "candidateDepth" : 20,
+    "rerankWeight" : 0
+  },
+  "semanticAnswerSupport" : "NOT_EVALUATED: inspect references and business outcome; human review required",
+  "billing" : "Provider usage is recorded when available; configured cost estimates are not invoices"
+}

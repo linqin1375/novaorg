@@ -1,0 +1,43 @@
+{
+  "startedAt" : "2026-10-21T03:02:02.980774200Z",
+  "finishedAt" : "2026-10-21T03:02:24.727711200Z",
+  "mode" : "retrieval",
+  "llm" : "NOT_CALLED: retrieval-only",
+  "embedding" : "learned-embedding:embedding-3@open.bigmodel.cn/1024d",
+  "learnedEmbedding" : true,
+  "dataset" : [ "eval/retrieval-cases.json", "eval/retrieval-holdout.json" ],
+  "casesHash" : {
+    "holdout" : "bf993677eb31cca7fe949d587fd7f8ba378f3d915cbcdc2528b3e0e7db8a1974",
+    "dev" : "0ae599677f4d784a5d0259f2646fc2f8a0afbb4ba5fc9f2f5429abc9f2582623"
+  },
+  "knowledgeHash" : "e1f1ac341cd5ce01e95bd2fa596c0dfc2000d42a80281822de7acd87cc1d0292",
+  "promptHash" : "737cc3b496a8afe7749a67b5ddab5255e79fa0f983393d708f57817ec58723ec",
+  "trials" : 1,
+  "casesPerTrial" : 0,
+  "modelRequests" : 0,
+  "caseIds" : [ ],
+  "inputTokens" : 0,
+  "outputTokens" : 0,
+  "usageEstimated" : true,
+  "requestLimit" : 30,
+  "tokenLimit" : 50000,
+  "embeddingUsage" : {
+    "inputTexts" : 120,
+    "inputCharacters" : 4726,
+    "usageComplete" : true,
+    "inputTokens" : 3647,
+    "httpRequests" : 83
+  },
+  "embeddingLimits" : {
+    "maxCharacters" : 200000,
+    "maxUniqueTexts" : 200
+  },
+  "strictTools" : "false",
+  "retrievalConfig" : {
+    "candidateDepth" : 20,
+    "rerankWeight" : 0,
+    "rrfK" : 60
+  },
+  "semanticAnswerSupport" : "NOT_EVALUATED: inspect references and business outcome; human review required",
+  "billing" : "Provider usage is recorded when available; configured cost estimates are not invoices"
+}
